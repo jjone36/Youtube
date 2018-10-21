@@ -1,11 +1,13 @@
 library(tidyverse)
 library(magrittr)
 library(lubridate)
+library(RColorBrewer)
 library(gridExtra)
 library(GGally)
 library(jsonlite)
 library(rvest)
 library(tuber)
+library(tidytext)
 library(text2vec)
 library(caret)
 library(glmnet)
@@ -276,6 +278,9 @@ str(us$tags)
 us$n_tags = str_count(us$tags, pattern = '\"\\|\"') + 1
 hist(us$n_tags, main = 'The Number of Tags', xlab = NULL)
 
+us$n_tags[us$views > 200000000]
+summary(us$n_tags)
+
 # the number of tags per topic
 ggplot(us, aes(x = topic, y = n_tags, fill = topic)) +
   geom_boxplot(show.legend = F, varwidth = T) +   
@@ -294,6 +299,34 @@ ggplot(us, aes(x = n_tags, y = views, col = topic)) +
   geom_col(show.legend = F) + 
   facet_wrap(topic~., scales = 'free_y') + 
   labs(x = NULL, y = NULL, title = 'View Count vs Tag Numbers per Topic') 
+
+
+table(us$topic)
+
+keyword = function(x){
+  # unnest token the tag column
+  tag_tidy = us %>%
+    filter(topic == x) %>%
+    filter(views > quantile(us$views, probs = .75)) %>%
+    select(tags) %>%
+    unnest_tokens(output = 'word', input = tags) 
+  
+  # wordcloud plot for hot keyword
+  tag_tidy %>%
+    count(word) %>%
+    arrange(desc(n)) %$%
+    wordcloud::wordcloud(words = word, freq = n, min.freq = 50, scale = c(.5, 1.5), max.words = 50, colors = brewer.pal(8, 'Dark2'))
+}
+
+par(mfrow=c(2, 3))
+
+keyword('Comedy')
+keyword('Entertainment')
+keyword('Gaming')
+keyword('Howto & Style')
+keyword('Music')
+keyword('Pets & Animals')
+keyword('Travel & Events')
 
 
 # 2-6. Pairs Plot & correlation 
