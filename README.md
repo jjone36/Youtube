@@ -1,4 +1,4 @@
-# Strategies to be a successful Youtuber 
+# Youtuber Strategies 
 
 This is a repository for youtube project to develop strategies for Youtubers and predict the views of videos 
 
