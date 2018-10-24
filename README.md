@@ -9,4 +9,4 @@ This is a repository for youtube project to develop strategies for Youtubers and
  
 > Publication:  
  - "Strategies To Be A Successful Youtuber: Intensive Youtube Exploratory Analysis (Part 1/2)", Oct 24. 2018, Medium 
- - URL: 
+ - URL: (TBU)
