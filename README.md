@@ -9,4 +9,4 @@ This is a repository for youtube project to develop strategies for Youtubers and
  
 > Publication:  
  - "Strategies To Be A Successful Youtuber: Intensive Youtube Exploratory Analysis (Part 1/2)", Oct 24. 2018, Medium 
- - URL: (TBU)
+ - URL: https://towardsdatascience.com/strategies-to-be-a-successful-youtuber-extensive-youtube-exploratory-analysis-part-1-2-40eee29554e6
