@@ -3,7 +3,7 @@
 This is a repository for youtube project to develop strategies for Youtubers and predict the views of videos 
 
 > ML skill Used: 
-  - Scraping data from Youtube API and intensive exploratory data analysis 
+  - Scraping data from Youtube API and intensive exploratory data analysis with visualization
   - Word embedding with text2vec package 
   - predicting the views with glmnet and  xgboost
  
