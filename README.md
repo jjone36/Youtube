@@ -8,7 +8,7 @@ How long do you usually spend your time watching Youtube? What is your favorite 
 
 Youtube is becoming one of the major social network platforms and even a rising searching engine. There are apparent movements among users and even digital marketers switching their attention from Facebook to Youtube. Youtuber is now a rising star. They connect to people with their unique content. With over millions of subscribers, youtube stars make profits not only by the views but also by launching their own business. Within this changing stream, This project can tell us how to be a successful Youtuber and build a predictive model for the views based on their content.
 
-<br>
+* **Project Date:** Oct, 2018
 
 * **Applied skills:** Intensive exploratory data analysis with visualization. Scraping data from Youtube API. Text Mining. Word embedding with text2vec package. Natural Language Processing. Predictive the views with glmnet and XGboost
 
