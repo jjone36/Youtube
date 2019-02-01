@@ -6,6 +6,8 @@
 ## ***1. Youtube is Changing the World***
 How long do you usually spend your time watching Youtube? What is your favorite channel? What channels are the most popular these days? 
 
+![youtuber](https://github.com/jjone36/Youtube/blob/master/youtuber.jpg)
+
 Youtube is becoming one of the major social network platforms and even a rising searching engine. There are apparent movements among users and even digital marketers switching their attention from Facebook to Youtube. Youtuber is now a rising star. They connect to people with their unique content. With over millions of subscribers, youtube stars make profits not only by the views but also by launching their own business. Within this changing stream, This project can tell us how to be a successful Youtuber and build a predictive model for the views based on their content.
 
 <br>
